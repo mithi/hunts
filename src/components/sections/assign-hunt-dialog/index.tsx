@@ -14,6 +14,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { ScrollArea } from "@/components/ui/scroll-area"
+import { useToast } from "@/components/ui/use-toast"
 import { APIupdateHuntAssets } from "@/db"
 import { useAssetFilterParameters } from "@/hooks/api"
 import { sleep } from "@/lib/utils"
@@ -51,6 +52,8 @@ export function AssignHuntDialog({
   const disabledMsg = incomplete
     ? "Fill all required fields to continue."
     : "Not allowed at this time."
+
+  const { toast } = useToast()
 
   return (
     <Dialog modal={true} open={open} onOpenChange={setOpen}>
@@ -111,6 +114,11 @@ export function AssignHuntDialog({
                     assets.map(asset => asset.assetId)
                   )
                   setMutateState("COMPLETED")
+                  toast({
+                    title: "Request Successful",
+                    description: `${assets.length} Assets(s) was added to the selected hunt`,
+                  })
+
                   setOpen(false)
                 })
                 .catch(() => {
