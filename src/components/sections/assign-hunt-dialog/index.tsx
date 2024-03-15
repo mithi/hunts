@@ -1,7 +1,7 @@
+import { TenantBadge } from "@/components/common/badges"
 import { Combobox } from "@/components/common/combobox"
 import GenericButton from "@/components/common/generic-button"
-import InputLayout from "@/components/common/input-layout"
-import { ErrorText, MutedText, TenantBadge } from "@/components/common/misc"
+import { ErrorText, InputLayout, MutedText } from "@/components/common/misc"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import {
@@ -82,7 +82,6 @@ export function AssignHuntDialog({
             />
           }
         />
-
         <MutedText
           text={`The ${assets.length} asset(s) with identifiers listed below will be attached to this hunt:`}
         />

@@ -42,7 +42,9 @@ const MainContent = () => {
           />
         }
       />
-      {!isFetchingAssets && (
+      {isFetchingAssets ? (
+        <SkeletonCard />
+      ) : (
         <>
           {appliedFilters && (
             <AppliedFiltersHeader count={assets.length} filters={appliedFilters} />
@@ -65,7 +67,6 @@ const MainContent = () => {
           />
         </>
       )}
-      {isFetchingAssets && <SkeletonCard />}
     </>
   )
 }

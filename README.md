@@ -33,7 +33,7 @@ http://127.0.0.1:4173/
 
 ## Known Issues and Limitations
 
-- Pagination not implelmented
+- Pagination not implemented
 - The `autocomplete filter` algorithm used for `combobox.tsx` and `multiselect.tsx` is the default one, which I feel doesn't really work well. Better to use a custom one.
 - Error boundaries not implemented - https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary
 - Text overflow (long character strings) and responsiveness not implemented
@@ -61,14 +61,14 @@ see `./db/` and `./hooks/api` for more information
 
 ## Used
 
-- nodeJS
+- Node - https://nodejs.org/
 - Vite - https://vitejs.dev/guide/
 - React - https://react.dev/
 - pnpm - https://pnpm.io/
-- typescript - https://www.typescriptlang.org/
+- Typescript - https://www.typescriptlang.org/
 - Tanstack Table - https://tanstack.com/table/
 - `useSWR` - https://swr.vercel.app/
-- `CMDK 0.2.0` https://github.com/pacocoursey/cmdk, be use `0.2.0` because of this issue: https://github.com/shadcn-ui/ui/pull/2945
+- `CMDK 0.2.0` https://github.com/pacocoursey/cmdk, use `0.2.0` because of this issue: https://github.com/shadcn-ui/ui/pull/2945
 - Shadcn - https://ui.shadcn.com/ which is built upon https://www.radix-ui.com/
 - Tailwind - https://tailwindcss.com/docs/guides/vite
 - Multiselect - copied and modified from https://craft.mxkaske.dev/post/fancy-multi-select

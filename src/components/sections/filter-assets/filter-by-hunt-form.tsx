@@ -1,9 +1,9 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { ReactNode, useState } from "react"
-import InputLayout from "@/components/common/input-layout"
 import { Combobox } from "@/components/common/combobox"
 import { useAssetFilterParameters } from "@/hooks/api"
 import GenericButton from "@/components/common/generic-button"
+import { InputLayout } from "@/components/common/misc"
 
 const FilterByHuntLayout = ({
   input,
@@ -62,17 +62,15 @@ const FilterByHuntForm = ({
         />
       }
       actions={
-        <div>
-          <GenericButton
-            disabled={disabled}
-            disabledMsg={disabledMsg}
-            isLoading={isLoading}
-            label="Apply Filters"
-            onClick={() => {
-              onSubmit(hunt)
-            }}
-          />
-        </div>
+        <GenericButton
+          disabled={disabled}
+          disabledMsg={disabledMsg}
+          isLoading={isLoading}
+          label="Apply Filters"
+          onClick={() => {
+            onSubmit(hunt)
+          }}
+        />
       }
     />
   )

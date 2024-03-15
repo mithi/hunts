@@ -19,7 +19,7 @@ import {
 import AssetDetailsContent from "../asset-details/asset-details-content"
 import { Asset } from "@/types"
 import ViewMorePopover from "@/components/common/view-more-popover"
-import { TenantBadge } from "@/components/common/misc"
+import { TenantBadge } from "@/components/common/badges"
 
 const columns: ColumnDef<Asset>[] = [
   {

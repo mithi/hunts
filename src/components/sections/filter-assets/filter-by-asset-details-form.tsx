@@ -3,9 +3,8 @@ import { ReactNode, useState } from "react"
 import { assetFilterParameters } from "@/db"
 import { Combobox } from "@/components/common/combobox"
 import { MultiSelect } from "@/components/common/multiselect"
-import InputLayout from "@/components/common/input-layout"
 import { useAssetFilterParameters } from "@/hooks/api"
-import { ErrorText } from "@/components/common/misc"
+import { ErrorText, InputLayout } from "@/components/common/misc"
 import GenericButton from "@/components/common/generic-button"
 
 const FilterByAssetDetailsLayout = ({
@@ -23,9 +22,9 @@ const FilterByAssetDetailsLayout = ({
     <Card className="pt-6 mb-4">
       <CardContent className="space-y-2">
         {tenant}
-        <Card className="flex gap-2 px-4 py-2">
-          <div className="w-1/2 grow">{technology}</div>
-          <div className="w-1/2 grow">{versions}</div>
+        <Card className="flex flex-col md:flex-row gap-2 px-4 py-2">
+          <div className="w-full md:w-1/2 grow">{technology}</div>
+          <div className="w-full md:w-1/2 grow">{versions}</div>
         </Card>
       </CardContent>
       <CardFooter>{button}</CardFooter>
