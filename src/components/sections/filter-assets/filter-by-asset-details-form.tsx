@@ -4,7 +4,7 @@ import { assetFilterParameters } from "@/db"
 import { Combobox } from "@/components/common/combobox"
 import { MultiSelect } from "@/components/common/multiselect"
 import { useAssetFilterParameters } from "@/hooks/api"
-import { ErrorText, InputLayout } from "@/components/common/misc"
+import { InputLayout } from "@/components/common/misc"
 import GenericButton from "@/components/common/generic-button"
 
 const FilterByAssetDetailsLayout = ({
@@ -141,18 +141,15 @@ const FilterByAssetDetailsForm = ({
         />
       }
       button={
-        <div>
-          {error && <ErrorText />}
-          <GenericButton
-            disabled={disabled}
-            disabledMsg={disabledMsg}
-            label="Apply Filters"
-            onClick={() => {
-              onSubmit(filters)
-            }}
-            isLoading={isLoading}
-          />
-        </div>
+        <GenericButton
+          disabled={disabled}
+          disabledMsg={disabledMsg}
+          label="Apply Filters"
+          onClick={() => {
+            onSubmit(filters)
+          }}
+          isLoading={isLoading}
+        />
       }
     />
   )

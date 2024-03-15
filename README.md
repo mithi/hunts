@@ -4,7 +4,7 @@ View in https://hunts-nine.vercel.app/
 
 ## How to Run
 
-Make sure you have node and `pnpm` installed see also https://pnpm.io/installation
+Make sure you have Node and `pnpm` installed. See also: https://pnpm.io/installation
 
 ```
 $ nvm use 18
@@ -26,10 +26,10 @@ http://127.0.0.1:4173/
 
 ## Screenshots
 
-![](./screenshots/x-asset-details-popover-2.png)
-![](./screenshots/x-asset-details-popover.png)
-![](./screenshots/x-attach-to-hunt-modal.png)
-![](./screenshots/x-autocomplete-hunt.png)
+![Asset Details Popover First Screenshot](./screenshots/x-asset-details-popover-2.png)
+![Asset Details Popover First Screenshot](./screenshots/x-asset-details-popover.png)
+![Hand Modal Screenshot](./screenshots/x-attach-to-hunt-modal.png)
+![Autocomplete Screenshot](./screenshots/x-autocomplete-hunt.png)
 
 ## Known Issues and Limitations
 
@@ -68,7 +68,7 @@ see `./db/` and `./hooks/api` for more information
 - Typescript - https://www.typescriptlang.org/
 - Tanstack Table - https://tanstack.com/table/
 - `useSWR` - https://swr.vercel.app/
-- `CMDK 0.2.0` https://github.com/pacocoursey/cmdk, use `0.2.0` because of this issue: https://github.com/shadcn-ui/ui/pull/2945
+- `CMDK 0.2.0` https://github.com/pacocoursey/cmdk, used `0.2.0` because of this issue: https://github.com/shadcn-ui/ui/pull/2945
 - Shadcn - https://ui.shadcn.com/ which is built upon https://www.radix-ui.com/
 - Tailwind - https://tailwindcss.com/docs/guides/vite
 - Multiselect - copied and modified from https://craft.mxkaske.dev/post/fancy-multi-select
